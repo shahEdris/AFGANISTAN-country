@@ -1,0 +1,148 @@
+:root {
+  --primary: #146c43;
+  --primary-dark: #0b4229;
+  --secondary: #e9b949;
+  --background: #f7f8f3;
+  --white: #ffffff;
+  --text: #25352b;
+  --muted: #68766c;
+  --border: #e4e9e2;
+  --shadow: 0 10px 30px rgba(17, 61, 37, 0.1);
+  --radius: 18px;
+}
+
+/* 3. Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 4. Navigation Bar */
+.navbar {
+  width: 100%;
+  padding: 18px 0;
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.logo span {
+  color: var(--secondary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.nav-button {
+  background: var(--primary);
+  color: var(--white);
+  padding: 11px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* 5. Hero Section */
+.hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--white);
+  background: linear-gradient(
+      90deg,
+      rgba(5, 30, 19, 0.88),
+      rgba(5, 30, 19, 0.45),
+      rgba(5, 30, 19, 0.1)
+    ),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85")
+      center / cover no-repeat;
+}
+
+.hero-content {
+  max-width: 720px;
+  padding: 100px 0;
+}
+
+.hero-tag {
+  display: inline-block;
+  color: var(--secondary);
+  border: 1px solid rgba(233, 185, 73, 0.7);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 7px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
