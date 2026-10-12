@@ -1,392 +1,546 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Discover the beautiful provinces, historic places, and hotels of Afghanistan."
+    />
+
+    <title>Discover Afghanistan | Travel Guide</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- Navigation -->
     <header class="navbar">
-      <a class="logo" href="#"
-        ><span class="logo-icon">✦</span> Discover <b>Afghanistan</b></a
-      >
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#provinces">Provinces</a>
-        <a href="#hotels">Hotels</a>
-        <a href="#about">About</a>
-      </nav>
-      <a class="nav-button" href="#provinces">Explore <span>↗</span></a>
+      <div class="container">
+        <a href="#home" class="logo"> Discover<span>AF</span> </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destinations">Provinces</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#destinations" class="nav-button">Explore Now</a>
+      </div>
     </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> EXPLORE THE HEART OF ASIA</p>
-          <h1>Discover the beauty<br />of <em>Afghanistan.</em></h1>
-          <p class="hero-text">
-            Explore breathtaking mountains, ancient cities, blue lakes and
-            unforgettable cultural places. Find a province, discover its
-            attractions and plan your stay.
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-tag">EXPLORE THE HEART OF ASIA</span>
+
+          <h1>
+            Discover the Beauty of
+            <span>Afghanistan</span>
+          </h1>
+
+          <p>
+            Explore Afghanistan's breathtaking mountains, ancient cities, rich
+            culture, beautiful landscapes, and historic destinations.
           </p>
-          <a class="primary-button" href="#provinces"
-            >Explore destinations <span>↓</span></a
-          >
-          <div class="hero-stats">
-            <div><strong>34</strong><span>Provinces</span></div>
-            <div><strong>100+</strong><span>Places to explore</span></div>
-            <div><strong>1</strong><span>Beautiful country</span></div>
+
+          <div class="hero-buttons">
+            <a href="#destinations" class="btn btn-primary">
+              Explore Provinces
+            </a>
+
+            <a href="#hotels" class="btn btn-outline"> Hotel Information </a>
           </div>
         </div>
-        <div class="hero-photo">
-          <div class="photo-label">
-            <span class="dot"></span>
-            <div>
-              <strong>Band-e Amir</strong><small>Bamyan Province</small>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+              alt="Beautiful mountain landscape"
+            />
+          </div>
+
+          <div class="about-text">
+            <span class="section-subtitle">ABOUT AFGHANISTAN</span>
+
+            <h2>A Land of History, Culture and Natural Beauty</h2>
+
+            <p>
+              Afghanistan is a country in Central and South Asia known for its
+              historic cities, traditional culture, beautiful valleys, and
+              spectacular mountains.
+            </p>
+
+            <p>
+              From the historic streets of Herat to the blue lakes of Band-e
+              Amir in Bamyan, every region offers a different experience.
+            </p>
+
+            <div class="about-features">
+              <div class="feature">
+                <h3>34 Provinces</h3>
+                <p>Explore the country's provinces.</p>
+              </div>
+
+              <div class="feature">
+                <h3>Rich History</h3>
+                <p>Discover historic places and landmarks.</p>
+              </div>
+
+              <div class="feature">
+                <h3>Natural Beauty</h3>
+                <p>See mountains, valleys, and lakes.</p>
+              </div>
+
+              <div class="feature">
+                <h3>Local Culture</h3>
+                <p>Learn about traditions and lifestyles.</p>
+              </div>
             </div>
           </div>
-          <span class="photo-badge">A LAND OF HISTORY & BEAUTY ✦</span>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="intro" id="about">
-        <div>
-          <p class="eyebrow green">A COUNTRY OF MANY STORIES</p>
-          <h2>Every province has<br /><em>a story to tell.</em></h2>
-        </div>
-        <p>
-          From the historic streets of Herat to the dramatic peaks of Panjshir,
-          Afghanistan offers a wide variety of landscapes and cultural heritage.
-          Explore the guides below to learn about provincial capitals, famous
-          attractions and estimated hotel costs.
-        </p>
-      </section>
+    <!-- Provinces Section -->
+    <section class="section destinations" id="destinations">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-subtitle">EXPLORE THE COUNTRY</span>
 
-      <section class="destinations" id="provinces">
-        <div class="section-title">
-          <div>
-            <p class="eyebrow green">FIND YOUR NEXT ADVENTURE</p>
-            <h2>Explore Afghanistan's provinces</h2>
-          </div>
-          <p>Choose a destination and start exploring.</p>
+          <h2>Beautiful Provinces of Afghanistan</h2>
+
+          <p>
+            Discover some of Afghanistan's best-known provinces, their
+            attractions, and their unique landscapes.
+          </p>
         </div>
 
-        <div class="province-grid">
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=85"
-              alt="Kabul city and mountains"
-            />
-            <div class="card-content">
-              <span class="region">CENTRAL</span>
+        <div class="destination-grid">
+          <!-- Kabul -->
+          <article class="destination-card">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=80"
+                alt="City landscape representing Kabul"
+              />
+
+              <span class="province-tag">Capital City</span>
+            </div>
+
+            <div class="destination-content">
               <h3>Kabul</h3>
-              <p class="capital">Capital: Kabul</p>
+
               <p>
-                The capital city features lively bazaars, mountain views,
-                historic gardens and museums.
+                Afghanistan's capital is known for its busy markets, historic
+                landmarks, gardens, and mountain scenery.
               </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Babur's Garden</li>
-                <li>National Museum</li>
-                <li>Qargha Lake</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$25–$150</strong>
+
+              <div class="destination-info">
+                <span>Province capital<strong>Kabul</strong></span>
+                <span>Estimated hotel price<strong>$25–$100</strong></span>
               </div>
+
+              <a href="#hotels" class="card-link"> View Hotel Information → </a>
             </div>
           </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=85"
-              alt="Historic architecture"
-            />
-            <div class="card-content">
-              <span class="region">WEST</span>
+
+          <!-- Herat -->
+          <article class="destination-card">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=80"
+                alt="Historic architectural landmark"
+              />
+
+              <span class="province-tag">Historic City</span>
+            </div>
+
+            <div class="destination-content">
               <h3>Herat</h3>
-              <p class="capital">Capital: Herat</p>
+
               <p>
-                A cultural city known for beautiful tilework, historic
-                architecture, poetry and traditional bazaars.
+                Herat is famous for its historic architecture, traditional
+                crafts, cultural heritage, and the Great Mosque.
               </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Herat Citadel</li>
-                <li>Friday Mosque</li>
-                <li>Musalla Minarets</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$18–$60</strong>
+
+              <div class="destination-info">
+                <span>Province capital<strong>Herat</strong></span>
+                <span>Estimated hotel price<strong>$20–$80</strong></span>
               </div>
+
+              <a href="#hotels" class="card-link"> View Hotel Information → </a>
             </div>
           </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
-              alt="High mountain landscape"
-            />
-            <div class="card-content">
-              <span class="region">CENTRAL</span>
+
+          <!-- Bamyan -->
+          <article class="destination-card">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+                alt="Mountain scenery representing Bamyan"
+              />
+
+              <span class="province-tag">Mountain Views</span>
+            </div>
+
+            <div class="destination-content">
               <h3>Bamyan</h3>
-              <p class="capital">Capital: Bamyan</p>
+
               <p>
-                A highland province with striking lakes, mountain scenery, caves
-                and ancient Buddhist heritage.
+                Bamyan is known for its mountain scenery, archaeological
+                heritage, and the beautiful lakes of Band-e Amir National Park.
               </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Band-e Amir Lakes</li>
-                <li>Bamyan Valley</li>
-                <li>Shahr-e Gholghola</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$12–$45</strong>
+
+              <div class="destination-info">
+                <span>Province capital<strong>Bamyan</strong></span>
+                <span>Estimated hotel price<strong>$15–$60</strong></span>
               </div>
+
+              <a href="#hotels" class="card-link"> View Hotel Information → </a>
             </div>
           </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=85"
-              alt="Mountain valley"
-            />
-            <div class="card-content">
-              <span class="region">CENTRAL</span>
+
+          <!-- Panjshir -->
+          <article class="destination-card">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+                alt="Green valley and mountain landscape"
+              />
+
+              <span class="province-tag">Green Valley</span>
+            </div>
+
+            <div class="destination-content">
               <h3>Panjshir</h3>
-              <p class="capital">Capital: Bazarak</p>
+
               <p>
-                A spectacular mountain valley with a clear river, steep peaks,
-                orchards and beautiful scenery.
+                Panjshir is admired for its dramatic mountains, river valleys,
+                fresh air, and beautiful natural landscapes.
               </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Panjshir Valley</li>
-                <li>Panjshir River</li>
-                <li>Bazarak</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$15–$45</strong>
+
+              <div class="destination-info">
+                <span>Province capital<strong>Bazarak</strong></span>
+                <span>Estimated hotel price<strong>$15–$50</strong></span>
               </div>
+
+              <a href="#hotels" class="card-link"> View Hotel Information → </a>
             </div>
           </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=85"
-              alt="Blue mosque style architecture"
-            />
-            <div class="card-content">
-              <span class="region">NORTH</span>
+
+          <!-- Balkh -->
+          <article class="destination-card">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=80"
+                alt="Historic architecture"
+              />
+
+              <span class="province-tag">Ancient Heritage</span>
+            </div>
+
+            <div class="destination-content">
               <h3>Balkh</h3>
-              <p class="capital">Capital: Mazar-i-Sharif</p>
+
               <p>
-                A historic northern region known for religious landmarks,
-                ancient settlements and local markets.
+                Balkh is one of the region's historic areas, with a rich
+                cultural past and important religious and archaeological sites.
               </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Blue Mosque</li>
-                <li>Ancient Balkh</li>
-                <li>Mazar Bazaars</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$18–$55</strong>
+
+              <div class="destination-info">
+                <span>Province capital<strong>Mazar-i-Sharif</strong></span>
+                <span>Estimated hotel price<strong>$20–$80</strong></span>
               </div>
+
+              <a href="#hotels" class="card-link"> View Hotel Information → </a>
             </div>
           </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85"
-              alt="Green valley and hills"
-            />
-            <div class="card-content">
-              <span class="region">EAST</span>
+
+          <!-- Nangarhar -->
+          <article class="destination-card">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                alt="Natural landscape"
+              />
+
+              <span class="province-tag">Eastern Afghanistan</span>
+            </div>
+
+            <div class="destination-content">
               <h3>Nangarhar</h3>
-              <p class="capital">Capital: Jalalabad</p>
+
               <p>
-                A warm eastern province known for citrus orchards, river
-                landscapes and historic sites.
+                Nangarhar is known for its warm climate, agricultural areas,
+                local markets, and the city of Jalalabad.
               </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Jalalabad Gardens</li>
-                <li>Darunta Dam</li>
-                <li>Hadda Archaeological Area</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$15–$50</strong>
+
+              <div class="destination-info">
+                <span>Province capital<strong>Jalalabad</strong></span>
+                <span>Estimated hotel price<strong>$15–$60</strong></span>
               </div>
+
+              <a href="#hotels" class="card-link"> View Hotel Information → </a>
             </div>
           </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
-              alt="Desert landscape"
-            />
-            <div class="card-content">
-              <span class="region">SOUTH</span>
+
+          <!-- Kandahar -->
+          <article class="destination-card">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80"
+                alt="Landscape at sunset"
+              />
+
+              <span class="province-tag">Southern Afghanistan</span>
+            </div>
+
+            <div class="destination-content">
               <h3>Kandahar</h3>
-              <p class="capital">Capital: Kandahar</p>
+
               <p>
-                A major southern city with traditional markets and landmarks
-                connected to Afghan history.
+                Kandahar is an important historic city in southern Afghanistan,
+                known for its cultural heritage and traditional markets.
               </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Old Kandahar</li>
-                <li>Chilzina</li>
-                <li>Ahmad Shah Durrani Mausoleum</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$15–$55</strong>
+
+              <div class="destination-info">
+                <span>Province capital<strong>Kandahar</strong></span>
+                <span>Estimated hotel price<strong>$15–$70</strong></span>
               </div>
+
+              <a href="#hotels" class="card-link"> View Hotel Information → </a>
             </div>
           </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=85"
-              alt="Open mountain landscape"
-            />
-            <div class="card-content">
-              <span class="region">NORTH</span>
+
+          <!-- Badakhshan -->
+          <article class="destination-card">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=900&q=80"
+                alt="High mountain landscape"
+              />
+
+              <span class="province-tag">High Mountains</span>
+            </div>
+
+            <div class="destination-content">
               <h3>Badakhshan</h3>
-              <p class="capital">Capital: Fayzabad</p>
+
               <p>
-                A remote mountainous region with high peaks, deep valleys and
-                distinctive Pamiri culture.
+                Badakhshan features remote mountain valleys, spectacular
+                scenery, and access to some of Afghanistan's highest regions.
               </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Wakhan Corridor</li>
-                <li>Ishkashim</li>
-                <li>Fayzabad</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$15–$45</strong>
+
+              <div class="destination-info">
+                <span>Province capital<strong>Fayzabad</strong></span>
+                <span>Estimated hotel price<strong>$15–$60</strong></span>
               </div>
+
+              <a href="#hotels" class="card-link"> View Hotel Information → </a>
             </div>
           </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=900&q=85"
-              alt="Rocky mountains"
-            />
-            <div class="card-content">
-              <span class="region">NORTH</span>
-              <h3>Baghlan</h3>
-              <p class="capital">Capital: Puli Khumri</p>
-              <p>
-                A northern province with river valleys, farmland, mountain
-                routes and ancient heritage.
-              </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Surkh Kotal</li>
-                <li>Andarab Valley</li>
-                <li>Puli Khumri</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$15–$40</strong>
-              </div>
+
+          <!-- Ghor -->
+          <article class="destination-card">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
+                alt="Open natural landscape"
+              />
+
+              <span class="province-tag">Historic Landscapes</span>
             </div>
-          </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
-              alt="Wide dry landscape"
-            />
-            <div class="card-content">
-              <span class="region">WEST</span>
-              <h3>Farah</h3>
-              <p class="capital">Capital: Farah</p>
-              <p>
-                A southwestern province of wide plains, river-fed farmland and
-                historic settlements.
-              </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Farah City</li>
-                <li>Farah River</li>
-                <li>Pusht Rod</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$12–$35</strong>
-              </div>
-            </div>
-          </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=85"
-              alt="Rural mountain landscape"
-            />
-            <div class="card-content">
-              <span class="region">NORTH</span>
-              <h3>Faryab</h3>
-              <p class="capital">Capital: Maymana</p>
-              <p>
-                A province of agricultural plains, foothills, market towns and
-                diverse local traditions.
-              </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Maymana Bazaar</li>
-                <li>Qaysar</li>
-                <li>Andkhoy</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$12–$35</strong>
-              </div>
-            </div>
-          </article>
-          <article class="card">
-            <img
-              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85"
-              alt="Mountain peaks"
-            />
-            <div class="card-content">
-              <span class="region">CENTRAL</span>
+
+            <div class="destination-content">
               <h3>Ghor</h3>
-              <p class="capital">Capital: Firozkoh</p>
+
               <p>
-                A remote highland province with dramatic river valleys and
-                important medieval architecture.
+                Ghor is known for its mountainous terrain and the historic
+                Minaret of Jam, an important architectural landmark.
               </p>
-              <h4>Places to visit</h4>
-              <ul>
-                <li>Minaret of Jam</li>
-                <li>Firozkoh</li>
-                <li>Hari Rud Valley</li>
-              </ul>
-              <div class="price">
-                <span>Estimated hotel price / night</span
-                ><strong>$10–$30</strong>
+
+              <div class="destination-info">
+                <span>Province capital<strong>Firozkoh</strong></span>
+                <span>Estimated hotel price<strong>$10–$45</strong></span>
               </div>
+
+              <a href="#hotels" class="card-link"> View Hotel Information → </a>
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="hotel-banner" id="hotels">
-        <div class="banner-photo"></div>
-        <div class="banner-content">
-          <p class="eyebrow">PLAN YOUR STAY</p>
-          <h2>Travel with curiosity.<br /><em>Stay with care.</em></h2>
+    <!-- Hotel Prices -->
+    <section class="section hotels" id="hotels">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-subtitle">PLAN YOUR STAY</span>
 
-          <a class="primary-button" href="#provinces"
-            >Browse destinations <span>↗</span></a
-          >
+          <h2>Hotel Price Guide</h2>
+
+          <p>
+            Example hotel budgets to help you plan your trip. These are
+            illustrative estimates, not live booking prices. Actual rates depend
+            on the hotel, season, and room type.
+          </p>
         </div>
-      </section>
-    </main>
+
+        <div class="hotel-grid">
+          <div class="hotel-card">
+            <h3>Budget Hotel</h3>
+
+            <p>
+              A simple room for travellers who want to keep accommodation costs
+              low.
+            </p>
+
+            <div class="hotel-price">
+              $10–$25
+              <small>/ night</small>
+            </div>
+
+            <span class="hotel-monthly"> Approx. $300–$750 for 30 nights </span>
+          </div>
+
+          <div class="hotel-card">
+            <h3>Standard Hotel</h3>
+
+            <p>A more comfortable room with basic services and amenities.</p>
+
+            <div class="hotel-price">
+              $25–$60
+              <small>/ night</small>
+            </div>
+
+            <span class="hotel-monthly">
+              Approx. $750–$1,800 for 30 nights
+            </span>
+          </div>
+
+          <div class="hotel-card">
+            <h3>Premium Hotel</h3>
+
+            <p>
+              Higher-comfort accommodation with additional services where
+              available.
+            </p>
+
+            <div class="hotel-price">
+              $60–$150+
+              <small>/ night</small>
+            </div>
+
+            <span class="hotel-monthly">
+              Approx. $1,800–$4,500+ for 30 nights
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Banner -->
+    <section class="travel-banner">
+      <div class="container">
+        <div class="travel-banner-content">
+          <div>
+            <h2>Explore Afghanistan's Hidden Beauty</h2>
+
+            <p>
+              Discover new destinations, learn about local culture, and plan
+              your next adventure. Check local travel advice before visiting.
+            </p>
+          </div>
+
+          <a href="#destinations" class="btn btn-primary"> Start Exploring </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-subtitle">GET IN TOUCH</span>
+
+          <h2>Contact Us</h2>
+
+          <p>
+            Have a question about Afghanistan or this travel guide? Use this
+            section to add your contact information.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <h3>Discover Afghanistan</h3>
+
+          <p>
+            This website is a travel information project created to introduce
+            Afghanistan's provinces, attractions, and accommodation options.
+          </p>
+
+          <p>
+            Email:
+            <a href="mailto:info@example.com">info@example.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <h3>Discover<span style="color: #e9b949">AF</span></h3>
+
+            <p>
+              Explore the landscapes, history, and culture of Afghanistan with
+              our travel guide.
+            </p>
+          </div>
+
+          <div>
+            <h3>Quick Links</h3>
+
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#destinations">Provinces</a></li>
+              <li><a href="#hotels">Hotels</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Explore</h3>
+
+            <ul>
+              <li><a href="#destinations">Kabul</a></li>
+              <li><a href="#destinations">Herat</a></li>
+              <li><a href="#destinations">Bamyan</a></li>
+              <li><a href="#destinations">Panjshir</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Discover Afghanistan. Educational project.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
+```
